@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script type="module" src="./index.js" defer></script>
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="center">
+      <form id="sign-up-form" class="column">
+        <div class="row">
+          <div class="column">
+            <input
+              type="text"
+              id="name"
+              placeholder="Name"
+              class="text-input"
+            />
+
+            <span
+              id="nameErrorMessage"
+              class="center form-error-message"
+            ></span>
+
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              class="text-input"
+            />
+            <span
+              id="passwordErrorMessage"
+              class="center form-error-message"
+            ></span>
+
+            <input
+              type="password"
+              id="passwordConfirmation"
+              placeholder="Confirm password"
+              class="text-input"
+            />
+            <span
+              id="passwordConfirmationErrorMessage"
+              class="center form-error-message"
+            ></span>
+
+            <input
+              type="text"
+              id="email"
+              placeholder="Email"
+              class="text-input"
+            />
+            <span
+              id="emailErrorMessage"
+              class="center form-error-message"
+            ></span>
+
+            <input
+              type="text"
+              id="phoneNumber"
+              placeholder="Phone number"
+              class="text-input"
+            />
+            <span
+              id="phoneNumberErrorMessage"
+              class="center form-error-message"
+            ></span>
+          </div>
+
+          <div class="column">
+            <div class="row">
+              <label for="genderOptions">Gender</label>
+              <div id="genderOptions">
+                <div class="center">
+                  <label for="male">Male</label>
+                  <input type="radio" id="male" name="gender" value="male" />
+                </div>
+                <div class="center">
+                  <label for="female">Female</label>
+                  <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="female"
+                  />
+                </div>
+                <div class="center">
+                  <label for="other">Other</label>
+                  <input
+                    type="radio"
+                    id="other"
+                    name="gender"
+                    value="other"
+                    checked
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <label for="contactType">Contact</label>
+              <div id="contactType" class="column center">
+                <div class="row center">
+                  <label for="contactEmail">Email</label>
+                  <input
+                    type="checkbox"
+                    id="contactEmail"
+                    name="contact"
+                    checked
+                  />
+                </div>
+
+                <div class="row center">
+                  <label for="contactPhone">Phone</label>
+                  <input
+                    type="checkbox"
+                    id="contactPhone"
+                    name="contact"
+                    checked
+                  />
+                </div>
+                <span
+                  id="contactTypeErrorMessage"
+                  class="form-error-message"
+                ></span>
+              </div>
+            </div>
+
+            <label for="addressType">Address type</label>
+            <select id="addressType">
+              <option value="house">House</option>
+              <option value="apartment">Apartment</option>
+            </select>
+
+            <label for="address">Address</label>
+            <textarea type="text" id="address"> </textarea>
+            <span
+              id="addressErrorMessage"
+              class="center form-error-message"
+            ></span>
+          </div>
+        </div>
+        <button class="form-submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
